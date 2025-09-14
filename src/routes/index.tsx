@@ -1,7 +1,7 @@
 import { component$, useVisibleTask$, useSignal, useOnWindow, $ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 
-import { Anchor, Hoverable } from '@luminescent/ui-qwik'; // removed LogoBirdflop
+import { Hoverable } from '@luminescent/ui-qwik'; // removed LogoBirdflop
 import { Palette, Box, Wrench, Github } from 'lucide-icons-qwik';
 import { initiateTyper } from '~/util/Typer';
 import { generateHead } from '~/root';
@@ -23,7 +23,7 @@ export default component$(() => {
       if (!bg) return;
       bg.style.bottom = `${window.scrollY / 2}px`;
       bg.style.setProperty('--tw-blur', `blur(${window.scrollY / 20}px)`);
-    })
+    }),
   );
 
   return (
@@ -33,7 +33,7 @@ export default component$(() => {
         <div class="relative my-0! mx-auto drop-shadow-lg">
           {/* Swap this image with your logo file in /public */}
           <img
-            src="/brewmc-logo.png"
+            src="/images/brewmc-logo.png"
             alt="BrewMC"
             width={180}
             height={180}
