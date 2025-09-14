@@ -54,7 +54,7 @@ export const defaultDescription = 'Play BrewMC at brew.mc.gg.';
 
 export function generateHead({
   title = 'Brew MC',
-  description = defaultDescriptio,
+  description = defaultDescription,
   image = '/branding/icon.png',
   ads = false,
   head = {},
